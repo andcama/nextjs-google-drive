@@ -6,7 +6,6 @@ const SideBar = ({onHandleNewUpload}) => {
       <CldUploadWidget
         uploadPreset="demo_tutorial"
         onSuccess={result => {
-          console.log(result)
           onHandleNewUpload(result.info)
 
         }}

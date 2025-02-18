@@ -10,7 +10,6 @@ const handler = async(req, res) => {
     const url = req.url.split("?");
 
     const searchTerm = url[1];
-    console.log(searchTerm)
     const data = await cloudinary.search.expression(searchTerm).execute();
     res.status(200).json(data.resources)
 }

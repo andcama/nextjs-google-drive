@@ -20,7 +20,6 @@ const Home = () => {
   }
   useEffect(() => { getData() }, [searchTerm])
 
-  console.log(assets)
 
   const onHandleNewUpload = (asset) => {
     setAssets(prev => [asset, ...prev])

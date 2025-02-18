@@ -15,7 +15,6 @@ const ImageCard = ({ asset }) => {
     saveAs(imgSrc,filename)
   }
 
-  console.log(filename)
   return (
     <article className="card">
       <div className="title-container">
